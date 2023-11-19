@@ -1,7 +1,7 @@
 # ahorcado
 import os # Librería para limpiar pantalla
 from rsc.modules.ahorcado import mostrar_palabra, mostrar_figura, decoracion
-#  puntaje
+
 from random import choice
 
 def main():
