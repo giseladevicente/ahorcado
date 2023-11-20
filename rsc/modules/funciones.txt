@@ -1,0 +1,88 @@
+
+
+#Mostrar letras adivinadas y no adivinadas
+def mostrar_palabra(palabra, letras_adivinadas):
+    resultado = ""
+    for letra in palabra:
+        if letra in letras_adivinadas:
+            resultado += f"{letra} "
+        else:
+            resultado += " _ "
+    return resultado
+
+# Linea decorativa
+def decoracion():
+    print("\n")
+    deco = print("*"*50)
+    return deco
+
+
+# Representación gráfica figura ahorcado
+def mostrar_figura(intentos):
+    figuras = [
+        """
+           +---+
+               |
+               |
+               |
+               |
+               |
+        =========""",
+        """
+           +---+
+           |   |
+               |
+               |
+               |
+               |
+        =========""",
+        """
+           +---+
+           |   |
+           O   |
+               |
+               |
+               |
+        =========""",
+        """
+           +---+
+           |   |
+           O   |
+           |   |
+               |
+               |
+        =========""",
+        """
+           +---+
+           |   |
+           O   |
+          /|   |
+               |
+               |
+        =========""",
+        """
+           +---+
+           |   |
+           O   |
+          /|\  |
+               |
+               |
+        =========""",
+        """
+           +---+
+           |   |
+           O   |
+          /|\  |
+          /    |
+               |
+        =========""",
+        """
+           +---+
+           |   |
+           O   |
+          /|\  |
+          / \  |
+               |
+        ========="""
+    ]
+    return figuras[intentos]
